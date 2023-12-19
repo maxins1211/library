@@ -47,6 +47,9 @@ const printAllBooks = function () {
     h2.classList.add("author");
     p.classList.add("page");
     button1.classList.add("status");
+    if (book.read === "Completed") {
+      button1.classList.toggle("completed");
+    }
     button2.classList.add("remove");
     div.classList.add("card");
     div.setAttribute("data-index", index);
